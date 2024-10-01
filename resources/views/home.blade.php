@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 <body>
 <nav id="navbar">
@@ -12,8 +14,8 @@
     </div>
     <div id="logoptions">
         <ul>
-            <li class="redc"> <a href="home.html">Home</a> </li>
-            <li class="bluec"> <a href="OverOns.html">Over ons </a></li>
+            <li class="redc"> <a href="home.blade.php">Home</a> </li>
+            <li class="bluec"> <a href="Overons.blade.php">Over ons </a></li>
             <li class="redc"> <a href="service.html">Service </a></li>
             <li class="bluec" > <a href="zakelijk.html">Zakelijk </a></li>
             <li class="redc"> <a href="faq.html">Faq </a> </li>
